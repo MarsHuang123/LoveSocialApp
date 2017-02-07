@@ -1,3 +1,11 @@
+/*
+*welcome index
+*create by mars
+*create at 2017-2-6
+*/
+
+'use strict';
+
 export const NAME = 'welcome'
 
 export const GET_PRODUCT_LIST_SUCC = 'GET_PRODUCT_LIST_SUCC'

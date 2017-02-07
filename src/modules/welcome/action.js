@@ -1,3 +1,9 @@
+/*
+*welcome index
+*create by mars
+*create at 2017-2-6
+*/
+
 
 import * as ActionTypes from './constants'
 import HttpRequest from '../../utils/http.js'

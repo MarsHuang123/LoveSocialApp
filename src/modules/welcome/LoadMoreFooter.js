@@ -1,3 +1,12 @@
+/*
+*welcome index
+*create by mars
+*create at 2017-2-6
+*/
+
+'use strict';
+
+
 import React, { Component } from 'react';
 import {
     View,

@@ -1,3 +1,11 @@
+/*
+*welcome index
+*create by mars
+*create at 2017-2-6
+*/
+
+'use strict';
+
 import React from 'react'
 import { Component, View, Text } from 'react-native';
 import { Provider } from 'react-redux';

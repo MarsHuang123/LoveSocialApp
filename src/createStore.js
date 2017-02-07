@@ -1,3 +1,11 @@
+/*
+*welcome index
+*create by mars
+*create at 2017-2-6
+*/
+
+'use strict';
+
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
 
