@@ -91,13 +91,25 @@ class ItemList extends Component {
 		});
 	}
 
+	_toAnotherDetail() {
+		const { navigator, rowData } = this.props;
+		if(navigator) {
+			// navigator.push({
+			//     component: ProductDetailContainer,
+			//     params: {
+			//     	rowData
+			//     }
+			// });
+		}
+	}
+
 	render() {
 		const { products } = this.props.welcome;
 		// console.log("this.props", this.props);
 		const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
 		return (
 			<View style={{backgroundColor: 'blue', flex: 0.3}}>
-				<NavigationBar title={'首页'}/>
+				<NavigationBar title={'首页'} rightTitle={'to tabbar'} rightImage={ backIcon } rightAction={ this._toAnotherDetail.bind(this)} />
 				<ListView style={ styles.listViewContent } 
 					dataSource={ ds.cloneWithRows(products) } 
 					renderRow={ (rowData,SectionId,rowID) => {
