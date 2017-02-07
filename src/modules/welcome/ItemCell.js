@@ -14,6 +14,7 @@ import {
 	Dimensions,
 	Image
 } from 'react-native'
+import WebImage from 'react-native-web-image'
 
 const { width, height } = Dimensions.get('window')
 
@@ -34,7 +35,7 @@ class ItemCell extends Component {
 		return (
 			<TouchableOpacity onPress={ () => goToDetail(rowData) } >
 				<View style={ styles.cellContiner }>
-					<Image style={ styles.image } source={{uri: `https:${rowData.imagePath}`}}/>
+					<WebImage style={styles.image} source={{uri: `https:${rowData.imagePath}`}}/>
 					<View style={ styles.textPart }>
 						<Text style={ styles.productName }>({ rowID - 0 + 1 }).{ rowData.productName }</Text>
 						<Text style={ styles.companyName }>{ rowData.companyName }</Text>
