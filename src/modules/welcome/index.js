@@ -1,3 +1,5 @@
+'use strict';
+
 import { NAME } from './constants'
 import reducer from './reducer'
 import action from './action'
