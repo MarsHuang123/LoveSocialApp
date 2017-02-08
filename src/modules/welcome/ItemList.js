@@ -29,7 +29,7 @@ import {
 	changeProductListLoadingMore
 } from './action.js'
 import Storage from '../../common/Storage.js'
-import backIcon from '../../Resources/images/back.png'
+import backIcon from '../../resources/images/back.png'
 
 const { width, height } = Dimensions.get('window')
 
