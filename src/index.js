@@ -1,7 +1,7 @@
 /*
-*welcome index
-*create by mars
-*create at 2017-2-6
+* welcome index
+* create by mars
+* create at 2017-2-6
 */
 
 'use strict';
@@ -12,6 +12,7 @@ import { Provider } from 'react-redux';
 
 import modules from './modules'
 import WelcomeContatiner from './modules/welcome/WelcomeContainer.js'
+import RouterContainer from './modules/router/RouterContainer'
 
 import createStore from './createStore'
 
@@ -21,7 +22,7 @@ const store = createStore()
 const Main = () => {
   return (
     <Provider store={store}>
-      <WelcomeContatiner />
+      <RouterContainer />
     </Provider>
   )
 }

@@ -9,6 +9,7 @@
 import welcome  from './welcome'
 import diary from './diary'
 import chat from './chat'
+import router from './router'
 
 //in this section keep importing yout modules
 
@@ -16,5 +17,6 @@ import chat from './chat'
 export {
   welcome,
   diary,
-  chat
+  chat,
+  router
 }

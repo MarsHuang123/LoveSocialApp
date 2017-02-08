@@ -1,7 +1,7 @@
 /*
-*welcome index
-*create by mars
-*create at 2017-2-6
+* welcome reducer
+* create by mars
+* create at 2017-2-6
 */
 
 'use strict';

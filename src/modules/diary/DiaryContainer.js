@@ -7,9 +7,18 @@
 'use strict';
 
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, Text, View } from 'react-native';
+import { TouchableOpacity, StyleSheet, Text, View } from 'react-native';
+
+import { connect } from 'react-redux'
+import {bindActionCreators} from 'redux';
 
 class DairyContainer extends Component {
+
+_switchView(){
+		const { logOn } = this.props.router;
+		this.props.routerAction.switchView(!logOn)
+	}
+
   render() {
     return (
       <View>
@@ -17,6 +26,11 @@ class DairyContainer extends Component {
         <Text style={styles.bigblue}></Text>
         <Text style={[styles.bigblue, styles.red]}></Text>
         <Text style={[styles.red, styles.bigblue]}>DairyContainer</Text>
+        <TouchableOpacity style={styles.leftNav} onPress={this._switchView.bind(this) }>
+                            <View style={{alignItems: 'center'}}>
+                                <Text style={{alignItems: 'center'}}>go list</Text>
+                            </View>
+         </TouchableOpacity>
       </View>
     );
   }
@@ -33,4 +47,12 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DairyContainer
+// export default DairyContainer
+
+function mapStateToProps(state) {
+	
+	return state;
+}
+
+
+export default connect(mapStateToProps)(DairyContainer);
