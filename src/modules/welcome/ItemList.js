@@ -30,10 +30,7 @@ import {
 	changeProductListLoadingMore
 } from './action.js'
 import Storage from '../../common/Storage.js'
-
-// import ProductImageContainer from '../containers/ProductImageContainer.js'
 import backIcon from '../../Resources/images/back.png'
-// import SearchBar from './SearchBar.js'
 
 const { width, height } = Dimensions.get('window')
 
