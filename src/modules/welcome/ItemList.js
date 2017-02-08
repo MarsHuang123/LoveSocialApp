@@ -1,7 +1,7 @@
 /*
-*welcome index
-*create by mars
-*create at 2017-2-6
+* welcome Item list component
+* create by mars
+* create at 2017-2-6
 */
 
 'use strict';
@@ -20,7 +20,6 @@ import {
 	Platform,
 } from 'react-native'
 import { request } from '../../utils/http.js'
-// import reducer from '../reducers/rootReducer.js'
 import LoadMoreFooter from './LoadMoreFooter.js'
 import ItemCell from './ItemCell.js'
 import NavigationBar from '../../common/NavigationBar.js'
